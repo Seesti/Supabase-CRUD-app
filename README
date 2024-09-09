@@ -1,0 +1,18 @@
+# CRUD App with TypeScript
+
+This project is a simple CRUD (Create, Read, Update, Delete) application built using TypeScript, Supabase, and Webpack.
+
+
+## To start
+
+install dependencies
+```bash
+  npm install 
+```
+
+compile to build
+```bash
+  npm run build
+```
+
+add API variables to api.ts

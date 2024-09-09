@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="/dist/main.js"></script>
+  </head>
+  <body class="bg-gray-100 p-5">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-6">CRUD App</h1>
+
+      <!-- Preferences -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Preferences</h2>
+        <ul id="preferencesList" class="list-disc pl-5"></ul>
+        <form id="addPreferenceForm" class="mt-4">
+          <input
+            type="text"
+            id="preferenceName"
+            class="p-2 border rounded"
+            placeholder="Preference Name"
+            required
+          />
+          <input
+            type="text"
+            id="preferenceDescription"
+            class="p-2 border rounded"
+            placeholder="Preference Description"
+            required
+          />
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">
+            Add Preference
+          </button>
+        </form>
+      </div>
+
+      <!-- Subscriptions -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Subscriptions</h2>
+        <ul id="subscriptionsList" class="list-disc pl-5"></ul>
+        <form id="addSubscriptionForm" class="mt-4">
+          <input
+            type="text"
+            id="subscriptionUserId"
+            class="p-2 border rounded"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="number"
+            id="subscriptionPreferenceId"
+            class="p-2 border rounded"
+            placeholder="Preference ID"
+            required
+          />
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">
+            Add Subscription
+          </button>
+        </form>
+      </div>
+
+      <!-- Users -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Users</h2>
+        <ul id="usersList" class="list-disc pl-5"></ul>
+      </div>
+    </div>
+  </body>
+</html>
